@@ -46,7 +46,7 @@ for i in range(100):
 #Final rendered run using the best weights.
 done = False
 count = 0
-env = wrappers.Monitor(env, 'MovieFiles', force=True)
+#env = wrappers.Monitor(env, 'MovieFiles', force=True) #Include this if you want a saved file of render.
 observation = env.reset()
 
 while not done:
